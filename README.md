@@ -1,7 +1,7 @@
 
 # Class hierarchy
 
-This is class hierarchy of 3 levels, each has 3 characteristics (fields and methods);
+This is class hierarchy of 3 levels;
 
 
 ## How it looks like
