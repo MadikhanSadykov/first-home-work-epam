@@ -5,10 +5,16 @@ public class Tetrahedron extends ThreeDimensionalShape{
     private double side;
 
     public Tetrahedron() {
-        this(10); // default value
+        this(0, 0, 0, 10);
+        // default value
     }
 
-    public Tetrahedron( double side ) {
+    public Tetrahedron(double side) {
+        this(0, 0, 0, side);
+    }
+
+    public Tetrahedron(int xCoordinate, int yCoordinate, int zCoordinate, double side) {
+        super(xCoordinate, yCoordinate, zCoordinate);
         this.side = side;
     }
 

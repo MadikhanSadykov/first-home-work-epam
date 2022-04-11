@@ -8,7 +8,12 @@ public class Circle extends TwoDimensionalShape {
         this(10.0); // default value
     }
 
-    public Circle( double radius ) {
+    public Circle(double radius) {
+        this(radius, 0, 0);
+    }
+
+    public Circle(double radius, int xCoordinate, int yCoordinate) {
+        super(xCoordinate, yCoordinate);
         this.radius = radius;
     }
 

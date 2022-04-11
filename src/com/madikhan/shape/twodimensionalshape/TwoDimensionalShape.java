@@ -4,6 +4,15 @@ import com.madikhan.shape.Shape;
 
 public abstract class TwoDimensionalShape extends Shape {
 
+    public TwoDimensionalShape() {
+        this(0, 0);
+    }
+
+
+    public TwoDimensionalShape(int xCoordinate, int yCoordinate) {
+        super(xCoordinate, yCoordinate);
+    }
+
     abstract double getArea();
     abstract double getPerimeter();
 

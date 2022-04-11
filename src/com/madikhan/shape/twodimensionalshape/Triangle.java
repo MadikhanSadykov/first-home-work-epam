@@ -11,6 +11,11 @@ public class Triangle extends TwoDimensionalShape{
     }
 
     public Triangle(double firstSide, double secondSide, double thirdSide) {
+        this(firstSide, secondSide, thirdSide, 0, 0);
+    }
+
+    public Triangle(double firstSide, double secondSide, double thirdSide, int xCoordinate, int yCoordinate) {
+        super(xCoordinate, yCoordinate);
         this.firstSide = firstSide;
         this.secondSide = secondSide;
         this.thirdSide = thirdSide;

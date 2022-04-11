@@ -8,7 +8,12 @@ public class Square extends TwoDimensionalShape {
         this(10); // default value
     }
 
-    public Square( double side ) {
+    public Square(double side) {
+        this(side, 0, 0);
+    }
+
+    public Square(double side, int xCoordinate, int yCoordinate) {
+        super(xCoordinate, yCoordinate);
         this.side = side;
     }
 

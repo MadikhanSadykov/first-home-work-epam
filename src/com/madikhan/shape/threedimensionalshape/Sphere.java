@@ -5,10 +5,15 @@ public class Sphere extends ThreeDimensionalShape{
     private double radius;
 
     public Sphere() {
-        this(10.0); // default value;
+        this(0, 0, 0, 10.0); // default value;
     }
 
-    public Sphere( double radius ) {
+    public Sphere(double radius) {
+        this(0, 0, 0, radius);
+    }
+
+    public Sphere(int xCoordinate, int yCoordinate, int zCoordinate, double radius ) {
+        super(xCoordinate, yCoordinate, zCoordinate);
         this.radius = radius;
     }
 

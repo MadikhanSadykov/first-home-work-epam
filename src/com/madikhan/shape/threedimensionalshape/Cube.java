@@ -9,6 +9,11 @@ public class Cube extends ThreeDimensionalShape{
     }
 
     public Cube( double side ) {
+        this(0, 0, 0, side);
+    }
+
+    public Cube(int xCoordinate, int yCoordinate, int zCoordinate, double side) {
+        super(xCoordinate, yCoordinate, zCoordinate);
         this.side = side;
     }
 
